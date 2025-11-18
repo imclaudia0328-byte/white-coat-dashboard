@@ -1,121 +1,448 @@
-2025.11.14 星期五
-13:14 楷臻 圖片
-13:14 楷臻 你小狗
-13:18 子萱  Claudia 那是頭還是屁股
-13:25 子萱  Claudia 07:21
-13:25 楷臻 屁股
-14:31 楷臻 圖片
-14:51 子萱  Claudia 哈哈哈
-17:03 楷臻 忽然想到
-17:03 楷臻 如果你主持的時候
-17:04 楷臻 你果忽然叫怎麼辦
-17:04 子萱  Claudia 我也想過
-17:04 子萱  Claudia 不知道
-17:05 子萱  Claudia 就跟大家說我有養狗啊
-19:01 楷臻 你要記得先吃飯喔
-19:01 楷臻 感覺會很晚
-19:42 子萱  Claudia 晚上是小公主
-19:42 子萱  Claudia 他一看到我就給我了
-19:43 子萱  Claudia 他們一定是跟他說那個常常買酒的
-20:28 楷臻 好好笑
-20:28 楷臻 你吃飯了嗎
-2025.11.15 星期六
-11:55 子萱  Claudia 要肥來了嗎
-11:56 楷臻 剛上車
-12:05 子萱  Claudia 貼圖
-12:08 楷臻 這是本來就有的貼圖嗎
-12:15 楷臻 我們的北臉點數可以折抵215元
-12:15 楷臻 要過期了
-12:41 楷臻 要吃什麼
-12:41 楷臻 我要餓死了
-13:27 楷臻 01:04
-13:35 楷臻 00:03
-13:35 楷臻 麻醬麵
-13:35 子萱  Claudia 幹嘛
-13:36 楷臻 嗎
-14:59 楷臻 04-23259725.pdf
-15:04 楷臻 https://eservices.taichung.gov.tw/LocationNew/IntroductionSon/150/FacilityRental/17f028b1-491b-4195-b323-7ea62cb0a9ee
-15:04 楷臻 https://www.janda-icc.com.tw/
-15:06 楷臻 https://royalntc.com/meeting-room/
-15:28 楷臻 https://www.meeting.com.tw/wenxin/room-g1.php
-19:32 子萱  Claudia 圖片
-2025.11.16 星期日
-09:36 楷臻 圖片
-16:57 子萱  Claudia 圖片
-16:58 楷臻 睡歪
-16:58 楷臻 真滴累
-16:59 子萱  Claudia 圖片
-16:59 子萱  Claudia 真的
-17:42 子萱  Claudia 圖片
-17:58 子萱  Claudia 00:17
-18:45 楷臻 下課了
-18:45 楷臻 我等等直接買滷味回去嗎
-18:45 楷臻 兒子睡得跟小寶寶一樣
-18:46 子萱  Claudia 好啊
-18:46 子萱  Claudia 可以
-18:46 子萱  Claudia 我需要6小
-18:47 子萱  Claudia 我今天做了很多事
-18:47 子萱  Claudia 很值得獎勵我
-18:47 楷臻 六小會不會太多？
-18:47 子萱  Claudia 貼圖
-18:47 子萱  Claudia 還是2小也可以
-18:58 楷臻 好
-19:06 楷臻 未接來電
-19:06 楷臻 他好像還沒開始賣
-19:06 楷臻 店門沒有開
-19:08 楷臻 01:00
-19:08 楷臻 https://maps.app.goo.gl/HNByQYRaKKYncFsH6?g_st=il
-19:11 子萱  Claudia 圖片
-19:11 子萱  Claudia 畫起來的是我要的
-19:11 子萱  Claudia 其他你幫我選
-19:13 子萱  Claudia 01:50
-19:14 子萱  Claudia 微微微辣喔
-19:14 子萱  Claudia 記得跟阿姨說
-19:14 楷臻 圖片
-19:14 楷臻 哪種
-19:14 子萱  Claudia 圖片
-19:18 楷臻 要看阿姨煮多久才知道多久會回家
-19:24 楷臻 誒
-19:24 楷臻 後面有一個男的
-19:24 楷臻 點大辣
-19:32 子萱  Claudia 02:47
-22:08 子萱  Claudia 圖片
-22:08 子萱  Claudia 烏溪：標準型$8000
-22:08 子萱  Claudia 額：洗牙
-22:08 子萱  Claudia 不知道多少錢
-2025.11.17 星期一
-19:03 楷臻 我有換位置喔
-19:03 子萱  Claudia 好
-19:03 子萱  Claudia 有點多人
-19:04 楷臻 好喔
-19:04 楷臻 圖片
-2025.11.18 星期二
-15:28 子萱  Claudia import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { forkJoin } from 'rxjs/observable/forkJoin';
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>白袍人生學院 - 課程管理系統</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState } = React;
+        
+        // Lucide Icons as SVG components
+        const Calendar = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>;
+        const DollarSign = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>;
+        const Users = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>;
+        const TrendingUp = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>;
+        const CheckCircle = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>;
+        const Plus = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>;
+        const ChevronLeft = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="15 18 9 12 15 6"></polyline></svg>;
+        const ChevronRight = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 18 15 12 9 6"></polyline></svg>;
 
-@Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  response = [];
-  constructor(public http: HttpClient) {
-    const request1 = this.http.get('https://restcountries.eu/rest/v1/name/india');
-    const request2 = this.http.get('https://restcountries.eu/rest/v1/name/us');
-    const request3 = this.http.get('https://restcountries.eu/rest/v1/name/ame');
-    const request4 = this.http.get('https://restcountries.eu/rest/v1/name/ja');
+        const AcademyDashboard = () => {
+            const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
+            const [currentYear] = useState(2025);
+            const [selectedDate, setSelectedDate] = useState(null);
+            const [showEventModal, setShowEventModal] = useState(false);
+            const [eventTitle, setEventTitle] = useState('');
+            const [selectedProject, setSelectedProject] = useState('');
+            
+            const [projects, setProjects] = useState([
+                {
+                    id: 1,
+                    name: '主題月',
+                    color: '#60A5FA',
+                    tasks: Array.from({length: 12}, (_, i) => ({
+                        id: i + 1,
+                        name: `${i + 1}月主題`,
+                        progress: 0,
+                        revenue: 0,
+                        participants: 0
+                    }))
+                },
+                {
+                    id: 2,
+                    name: '篝火計畫',
+                    color: '#F59E0B',
+                    tasks: Array.from({length: 12}, (_, i) => ({
+                        id: i + 1,
+                        name: `${i + 1}月場次`,
+                        progress: 0,
+                        revenue: 0,
+                        participants: 0
+                    }))
+                },
+                {
+                    id: 3,
+                    name: '直播課程',
+                    color: '#8B5CF6',
+                    tasks: []
+                },
+                {
+                    id: 4,
+                    name: '實體課程',
+                    color: '#EC4899',
+                    tasks: [
+                        { id: 1, name: '77老大(12月)', progress: 0, revenue: 0, participants: 0 },
+                        { id: 2, name: '77老大(1月)', progress: 0, revenue: 0, participants: 0 },
+                        { id: 3, name: '高峰年會(6月)', progress: 0, revenue: 0, participants: 0 }
+                    ]
+                }
+            ]);
 
-    const requestArray = [];
-    requestArray.push(request1);
-    requestArray.push(request2);
-    requestArray.push(request3);
-    requestArray.push(request4);
+            const [events, setEvents] = useState([]);
+            const [memberStats, setMemberStats] = useState({
+                blackCard: 12,
+                platinumCard: 0,
+                goldCard: 0
+            });
 
-    forkJoin(requestArray).subscribe(results => {
-      console.log(results);
-      this.response = results;
-    });
-  }
-}
+            const months = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+            
+            const getDaysInMonth = (month, year) => new Date(year, month + 1, 0).getDate();
+            const getFirstDayOfMonth = (month, year) => new Date(year, month, 1).getDay();
+
+            const generateCalendar = () => {
+                const daysInMonth = getDaysInMonth(currentMonth, currentYear);
+                const firstDay = getFirstDayOfMonth(currentMonth, currentYear);
+                const days = [];
+                
+                for (let i = 0; i < firstDay; i++) days.push(null);
+                for (let i = 1; i <= daysInMonth; i++) days.push(i);
+                
+                return days;
+            };
+
+            const hasEvent = (day) => {
+                if (!day) return false;
+                return events.some(e => 
+                    e.date.getMonth() === currentMonth && 
+                    e.date.getFullYear() === currentYear && 
+                    e.date.getDate() === day
+                );
+            };
+
+            const getEventsForDay = (day) => {
+                if (!day) return [];
+                return events.filter(e => 
+                    e.date.getMonth() === currentMonth && 
+                    e.date.getFullYear() === currentYear && 
+                    e.date.getDate() === day
+                );
+            };
+
+            const addEvent = () => {
+                if (!eventTitle || !selectedDate || !selectedProject) return;
+                
+                const newEvent = {
+                    id: Date.now(),
+                    title: eventTitle,
+                    date: new Date(currentYear, currentMonth, selectedDate),
+                    projectId: parseInt(selectedProject)
+                };
+                
+                setEvents([...events, newEvent]);
+                setShowEventModal(false);
+                setEventTitle('');
+                setSelectedProject('');
+            };
+
+            const updateTaskProgress = (projectId, taskId, progress) => {
+                setProjects(projects.map(p => 
+                    p.id === projectId 
+                        ? {
+                            ...p,
+                            tasks: p.tasks.map(t => 
+                                t.id === taskId ? { ...t, progress } : t
+                            )
+                        }
+                        : p
+                ));
+            };
+
+            const updateRevenue = (projectId, taskId, revenue, participants) => {
+                setProjects(projects.map(p => 
+                    p.id === projectId 
+                        ? {
+                            ...p,
+                            tasks: p.tasks.map(t => 
+                                t.id === taskId ? { ...t, revenue: parseInt(revenue) || 0, participants: parseInt(participants) || 0 } : t
+                            )
+                        }
+                        : p
+                ));
+            };
+
+            const addTask = (projectId) => {
+                const taskName = prompt('請輸入任務名稱:');
+                if (!taskName) return;
+                
+                setProjects(projects.map(p => 
+                    p.id === projectId 
+                        ? {
+                            ...p,
+                            tasks: [...p.tasks, { 
+                                id: Date.now(), 
+                                name: taskName, 
+                                progress: 0, 
+                                revenue: 0, 
+                                participants: 0 
+                            }]
+                        }
+                        : p
+                ));
+            };
+
+            const getTotalRevenue = () => {
+                return projects.reduce((sum, project) => 
+                    sum + project.tasks.reduce((taskSum, task) => taskSum + task.revenue, 0), 0
+                );
+            };
+
+            const getTotalParticipants = () => {
+                return projects.reduce((sum, project) => 
+                    sum + project.tasks.reduce((taskSum, task) => taskSum + task.participants, 0), 0
+                );
+            };
+
+            const calendar = generateCalendar();
+
+            return (
+                <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 p-6">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="mb-8">
+                            <h1 className="text-3xl font-bold text-gray-800 mb-2">白袍人生學院 課程管理系統</h1>
+                            <p className="text-gray-600">專案追蹤 · 行程管理 · 收益分析</p>
+                        </div>
+
+                        {/* 會員統計卡片 */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="p-3 bg-blue-100 rounded-xl">
+                                        <DollarSign />
+                                    </div>
+                                    <span className="text-sm text-gray-500">會員總收益</span>
+                                </div>
+                                <div className="text-3xl font-bold text-gray-800 mb-4">
+                                    NT$ {getTotalRevenue().toLocaleString()}
+                                </div>
+                                <div className="text-sm text-gray-500">從會員制度產生的總營收</div>
+                            </div>
+
+                            <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="p-3 bg-purple-100 rounded-xl">
+                                        <Users />
+                                    </div>
+                                    <span className="text-sm text-gray-500">會員統計</span>
+                                </div>
+                                
+                                <div className="space-y-3">
+                                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-gray-900 to-gray-800 rounded-lg">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                            <span className="text-white font-medium">黑卡會員</span>
+                                        </div>
+                                        <div className="flex items-center gap-3">
+                                            <input
+                                                type="number"
+                                                value={memberStats.blackCard}
+                                                onChange={(e) => setMemberStats({...memberStats, blackCard: parseInt(e.target.value) || 0})}
+                                                className="w-16 px-2 py-1 bg-gray-700 text-white border border-gray-600 rounded text-center text-sm"
+                                            />
+                                            <span className="text-white text-sm">人</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-gray-300 to-gray-200 rounded-lg">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                                            <span className="text-gray-800 font-medium">白金卡會員</span>
+                                        </div>
+                                        <div className="flex items-center gap-3">
+                                            <input
+                                                type="number"
+                                                value={memberStats.platinumCard}
+                                                onChange={(e) => setMemberStats({...memberStats, platinumCard: parseInt(e.target.value) || 0})}
+                                                className="w-16 px-2 py-1 bg-white border border-gray-300 rounded text-center text-sm"
+                                            />
+                                            <span className="text-gray-800 text-sm">人</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-yellow-100 to-yellow-50 rounded-lg border border-yellow-200">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                            <span className="text-gray-800 font-medium">金卡會員</span>
+                                        </div>
+                                        <div className="flex items-center gap-3">
+                                            <input
+                                                type="number"
+                                                value={memberStats.goldCard}
+                                                onChange={(e) => setMemberStats({...memberStats, goldCard: parseInt(e.target.value) || 0})}
+                                                className="w-16 px-2 py-1 bg-white border border-yellow-300 rounded text-center text-sm"
+                                            />
+                                            <span className="text-gray-800 text-sm">人</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="pt-2 border-t border-gray-200">
+                                        <div className="flex justify-between items-center">
+                                            <span className="text-gray-600 font-medium">會員總數</span>
+                                            <span className="text-2xl font-bold text-gray-800">
+                                                {memberStats.blackCard + memberStats.platinumCard + memberStats.goldCard} 人
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 課程統計 */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="p-3 bg-orange-100 rounded-xl">
+                                        <TrendingUp />
+                                    </div>
+                                    <span className="text-sm text-gray-500">課程參與人數</span>
+                                </div>
+                                <div className="text-3xl font-bold text-gray-800">
+                                    {getTotalParticipants().toLocaleString()} 人
+                                </div>
+                                <div className="text-sm text-gray-500 mt-1">所有課程的累計參與人數</div>
+                            </div>
+
+                            <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="p-3 bg-green-100 rounded-xl">
+                                        <CheckCircle />
+                                    </div>
+                                    <span className="text-sm text-gray-500">進行中專案</span>
+                                </div>
+                                <div className="text-3xl font-bold text-gray-800">
+                                    {projects.length} 個
+                                </div>
+                                <div className="text-sm text-gray-500 mt-1">目前活躍的專案數量</div>
+                            </div>
+                        </div>
+
+                        {/* 月曆 */}
+                        <div className="bg-white rounded-2xl shadow-sm p-6 mb-8 border border-gray-100">
+                            <div className="flex items-center justify-between mb-6">
+                                <h2 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+                                    <Calendar />
+                                    {currentYear}年 {months[currentMonth]}
+                                </h2>
+                                <div className="flex gap-2">
+                                    <button
+                                        onClick={() => setCurrentMonth((currentMonth - 1 + 12) % 12)}
+                                        className="p-2 hover:bg-gray-100 rounded-lg transition"
+                                    >
+                                        <ChevronLeft />
+                                    </button>
+                                    <button
+                                        onClick={() => setCurrentMonth((currentMonth + 1) % 12)}
+                                        className="p-2 hover:bg-gray-100 rounded-lg transition"
+                                    >
+                                        <ChevronRight />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-7 gap-2">
+                                {['日', '一', '二', '三', '四', '五', '六'].map(day => (
+                                    <div key={day} className="text-center font-semibold text-gray-600 py-2">
+                                        {day}
+                                    </div>
+                                ))}
+                                
+                                {calendar.map((day, index) => (
+                                    <div
+                                        key={index}
+                                        onClick={() => {
+                                            if (day) {
+                                                setSelectedDate(day);
+                                                setShowEventModal(true);
+                                            }
+                                        }}
+                                        className={`
+                                            min-h-20 p-2 rounded-lg border transition cursor-pointer
+                                            ${day ? 'hover:bg-blue-50 border-gray-200' : 'border-transparent'}
+                                            ${hasEvent(day) ? 'bg-blue-50 border-blue-200' : 'bg-white'}
+                                        `}
+                                    >
+                                        {day && (
+                                            <>
+                                                <div className="font-semibold text-gray-700 mb-1">{day}</div>
+                                                <div className="space-y-1">
+                                                    {getEventsForDay(day).map(event => {
+                                                        const project = projects.find(p => p.id === event.projectId);
+                                                        return (
+                                                            <div
+                                                                key={event.id}
+                                                                className="text-xs px-2 py-1 rounded truncate"
+                                                                style={{ backgroundColor: project?.color + '20', color: project?.color }}
+                                                            >
+                                                                {event.title}
+                                                            </div>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* 專案看板 */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            {projects.map(project => (
+                                <div key={project.id} className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <h3 className="text-lg font-bold text-gray-800 flex items-center gap-2">
+                                            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: project.color }} />
+                                            {project.name}
+                                        </h3>
+                                        <button
+                                            onClick={() => addTask(project.id)}
+                                            className="p-2 hover:bg-gray-100 rounded-lg transition"
+                                        >
+                                            <Plus />
+                                        </button>
+                                    </div>
+
+                                    <div className="space-y-3 max-h-96 overflow-y-auto">
+                                        {project.tasks.length === 0 ? (
+                                            <div className="text-center py-8 text-gray-400">
+                                                <p>尚無任務</p>
+                                                <p className="text-sm mt-1">點擊右上角 + 新增任務</p>
+                                            </div>
+                                        ) : (
+                                            project.tasks.map(task => (
+                                                <div key={task.id} className="border border-gray-200 rounded-lg p-4 hover:border-gray-300 transition">
+                                                    <div className="flex items-center justify-between mb-3">
+                                                        <span className="font-medium text-gray-700">{task.name}</span>
+                                                        <span className="text-sm text-gray-500">{task.progress}%</span>
+                                                    </div>
+                                                    
+                                                    <div className="mb-3">
+                                                        <div className="w-full bg-gray-200 rounded-full h-2">
+                                                            <div
+                                                                className="h-2 rounded-full transition-all"
+                                                                style={{
+                                                                    width: `${task.progress}%`,
+                                                                    backgroundColor: project.color
+                                                                }}
+                                                            />
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="grid grid-cols-3 gap-2 mb-2">
+                                                        <input
+                                                            type="number"
+                                                            placeholder="進度%"
+                                                            value={task.progress || ''}
+                                                            onChange={(e) => updateTaskProgress(project.id, task.id, Math.min(100, Math.max(0, parseInt(e.target.value) || 0)))}
+                                                            className="px-2 py-1 border border-gray-200 rounded text-sm"
+                                                        />
+                                                        <input
+                                                            type="number"
+                                                            placeholder="參與人數"
+                                                            value={task.participants || ''}
+                                                            onChange={(e) => updateRevenue(project.id, task.id, task.revenue, e.target.value)}
+                                                            className="px-2 py-1 border border-gray-200 rounded text-sm"
+                                                        />
+                                                        <input
+                                                            type="number"
+                                                            placeholder="收益"
+                                                            value={task.revenue || ''}
+                                                            onChange={(e) => updateRevenue(project.id, task.id, e.target.value,
